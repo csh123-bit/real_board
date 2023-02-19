@@ -6,6 +6,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        return redirect()->to('/client/client');
+        return view ('client/template/header').view('client/client').view('client/template/footer');
     }
 }
