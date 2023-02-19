@@ -57,7 +57,7 @@ class Client extends BaseController
                 exit();
             }
             if($userModel->save($data)){
-                return redirect()->to('/');;
+                return redirect()->to('/home');;
             };
         }
 

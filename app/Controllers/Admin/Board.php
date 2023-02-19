@@ -49,7 +49,7 @@ class Board extends BaseController
             if($boardConfigModel->save($boardConfigInfo)){
                 $boardCreate = new BoardModel($boardConfigInfo['boc_name']);
                 $boardCreate->createTable();
-                return redirect()->to('admin/board/');
+                return redirect()->to('/admin/board/');
             }
         }
 
